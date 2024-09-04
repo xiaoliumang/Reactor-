@@ -1,0 +1,137 @@
+﻿  正在验证源
+  正在将源远程复制到“1.94.35.82”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  Buffer.c
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(16,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(16,3): warning :    buffer->data = (char*)malloc(size);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(16,3): warning :    ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(19,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(19,3): warning :    memset(buffer->data, 0, size);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(19,3): warning :    ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(50,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(50,3): warning :    memcpy(buffer->data, buffer->data + buffer->readPos, readable);//起始地址，未读的地址，数量
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(50,3): warning :    ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(58,55): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(58,55): warning :    void* temp = realloc(buffer->data, buffer->capacity + size);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(58,55): warning :                                                        ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(63,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(63,3): warning :    memset(temp + buffer->capacity, 0, size);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(63,3): warning :    ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(90,2): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(90,2): warning :   memcpy(buffer->data + buffer->writePos, data, size);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(90,2): warning :   ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(97,19): warning : conversion to ‘int’ from ‘size_t’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(97,19): warning :   int size = strlen(data);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(97,19): warning :                    ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(109,2): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(109,2): warning :   vec[0].iov_len = writeable;
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(109,2): warning :   ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(113,20): warning : conversion to ‘int’ from ‘ssize_t’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(113,20): warning :   int result = readv(fd, vec, 2);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(113,20): warning :                     ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(135,71): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(135,71): warning :   char* ptr = memmem(buffer->data + buffer->readPos, bufferReadableSize(buffer), "\r\n", 2);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(135,71): warning :                                                                        ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(144,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(144,3): warning :    int count = send(socket, buffer->data + buffer->readPos, readable, MSG_NOSIGNAL);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(144,3): warning :    ^
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(144,19): warning : conversion to ‘int’ from ‘ssize_t’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(144,19): warning :    int count = send(socket, buffer->data + buffer->readPos, readable, MSG_NOSIGNAL);
+D:\VC\ReactorHttp\ReactorHttp\Buffer.c(144,19): warning :                    ^
+  Channel.c
+  ChannelMap.c
+D:\VC\ReactorHttp\ReactorHttp\ChannelMap.c(10,60): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\ChannelMap.c(10,60): warning :   map->list = (struct Channel**)malloc(size * sizeof(struct Channel*));
+D:\VC\ReactorHttp\ReactorHttp\ChannelMap.c(10,60): warning :                                                             ^
+D:\VC\ReactorHttp\ReactorHttp\ChannelMap.c(42,54): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\ChannelMap.c(42,54): warning :    struct Channel** temp = realloc(map->list, curSize * unitSize);
+D:\VC\ReactorHttp\ReactorHttp\ChannelMap.c(42,54): warning :                                                       ^
+D:\VC\ReactorHttp\ReactorHttp\ChannelMap.c(48,58): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\ChannelMap.c(48,58): warning :    memset(&map->list[map->size], 0, (curSize - map->size) * unitSize);
+D:\VC\ReactorHttp\ReactorHttp\ChannelMap.c(48,58): warning :                                                           ^
+  EpollDispatcher.c
+D:\VC\ReactorHttp\ReactorHttp\EpollDispatcher.c(55,2): warning : conversion to ‘uint32_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\EpollDispatcher.c(55,2): warning :   ev.events = events;
+D:\VC\ReactorHttp\ReactorHttp\EpollDispatcher.c(55,2): warning :   ^
+D:\VC\ReactorHttp\ReactorHttp\EpollDispatcher.c(97,31): warning : conversion to ‘int’ from ‘uint32_t’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\EpollDispatcher.c(97,31): warning :    int events = data->events[i].events;
+D:\VC\ReactorHttp\ReactorHttp\EpollDispatcher.c(97,31): warning :                                ^
+  EventLoop.c
+  HttpRequest.c
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(87,16): warning : initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(87,16): warning :   char* space = end;
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(87,16): warning :                 ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(90,29): warning : conversion to ‘size_t’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(90,29): warning :    space = memmem(start, end - start, sub, strlen(sub));
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(90,29): warning :                              ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(93,21): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(93,21): warning :   int length = space - start;
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(93,21): warning :                      ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(94,35): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(94,35): warning :   char* tmp = (char*)malloc(length + 1);
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(94,35): warning :                                    ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(95,2): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(95,2): warning :   strncpy(tmp, start, length);
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(95,2): warning :   ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(107,21): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(107,21): warning :   int lineSize = end - start;
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(107,21): warning :                      ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(160,22): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(160,22): warning :    int lineSize = end - start;
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(160,22): warning :                       ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(162,3): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(165,38): warning : conversion to ‘size_t’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(165,38): warning :     char* key = malloc(middle - start + 1);
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(165,38): warning :                                       ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(166,31): warning : conversion to ‘size_t’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(166,31): warning :     strncpy(key, start, middle - start);
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(166,31): warning :                                ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(169,42): warning : conversion to ‘size_t’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(169,42): warning :     char* value = malloc(end - middle - 2 + 1);
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(169,42): warning :                                           ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(170,44): warning : conversion to ‘size_t’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(170,44): warning :     strncpy(value, middle + 2, end - middle - 2);
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(170,44): warning :                                             ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(327,33): warning : conversion to ‘char’ from ‘int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(327,33): warning :     *to = hexToDec(from[1]) * 16 + hexToDec(from[2]);
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(327,33): warning :                                  ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(428,14): warning : ‘return’ with a value, in function returning void [enabled by default]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(428,14): warning :   if (fd <= 0)return -1;
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(428,14): warning :               ^
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(434,17): warning : conversion to ‘int’ from ‘ssize_t’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(434,17): warning :    int len = read(fd, buf, sizeof buf);
+D:\VC\ReactorHttp\ReactorHttp\HttpRequest.c(434,17): warning :                  ^
+  HttpResponse.c
+D:\VC\ReactorHttp\ReactorHttp\HttpResponse.c(14,30): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpResponse.c(14,30): warning :   response->headers = (struct ResponseHeader*)malloc(size);
+D:\VC\ReactorHttp\ReactorHttp\HttpResponse.c(14,30): warning :                               ^
+D:\VC\ReactorHttp\ReactorHttp\HttpResponse.c(17,2): warning : conversion to ‘size_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\HttpResponse.c(17,2): warning :   bzero(response->headers, size);
+D:\VC\ReactorHttp\ReactorHttp\HttpResponse.c(17,2): warning :   ^
+  main.c
+  PollDispatcher.c
+D:\VC\ReactorHttp\ReactorHttp\PollDispatcher.c(59,4): warning : conversion to ‘short int’ from ‘int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\PollDispatcher.c(59,4): warning :     data->fds[i].events = events;
+D:\VC\ReactorHttp\ReactorHttp\PollDispatcher.c(59,4): warning :     ^
+D:\VC\ReactorHttp\ReactorHttp\PollDispatcher.c(110,4): warning : conversion to ‘short int’ from ‘int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp\ReactorHttp\PollDispatcher.c(110,4): warning :     data->fds[i].events = events;
+D:\VC\ReactorHttp\ReactorHttp\PollDispatcher.c(110,4): warning :     ^
+D:\VC\ReactorHttp\ReactorHttp\PollDispatcher.c(122,42): warning : conversion to ‘nfds_t’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\PollDispatcher.c(122,42): warning :   int count = poll(data->fds, data->maxfd + 1, timeout * 1000);
+D:\VC\ReactorHttp\ReactorHttp\PollDispatcher.c(122,42): warning :                                           ^
+  SelectDispatcher.c
+  TcpConnection.c
+  TcpServer.c
+  ThreadPool.c
+D:\VC\ReactorHttp\ReactorHttp\ThreadPool.c(12,67): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\VC\ReactorHttp\ReactorHttp\ThreadPool.c(12,67): warning :   pool->workerThreads = (struct WorkerThread*)malloc(sizeof(struct WorkerThread) * count);
+D:\VC\ReactorHttp\ReactorHttp\ThreadPool.c(12,67): warning :                                                                    ^
+D:\VC\ReactorHttp\ReactorHttp\ThreadPool.c(48,15): warning : operation on ‘pool->index’ may be undefined [-Wsequence-point]
+D:\VC\ReactorHttp\ReactorHttp\ThreadPool.c(48,15): warning :    pool->index = ++pool->index % pool->threadNum;
+D:\VC\ReactorHttp\ReactorHttp\ThreadPool.c(48,15): warning :                ^
+  WorkerThread.c
+  正在链接对象
+  ReactorHttp.vcxproj -> D:\VC\ReactorHttp\ReactorHttp\bin\x64\Debug\ReactorHttp.out

@@ -1,0 +1,61 @@
+﻿  正在验证源
+  正在将源远程复制到“1.94.35.82”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  Buffer.cpp
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(77,24): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(77,24): warning :   int size = strlen(data);
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(77,24): warning :                         ^
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(99,31): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(99,31): warning :   int result = readv(fd, vec, 2);
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(99,31): warning :                                ^
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(130,70): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(130,70): warning :    int count = send(socket, m_data + m_readPos, readable, MSG_NOSIGNAL);
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(130,70): warning :                                                                       ^
+  Channel.cpp
+  Dispatcher.cpp
+  EpollDispatcher.cpp
+  EventLoop.cpp
+  HttpRequest.cpp
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(25,21): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(25,21): warning :   int length = space - start;
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(25,21): warning :                      ^
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(86,21): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(86,21): warning :   int lineSize = end - start;
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(86,21): warning :                      ^
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(111,22): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(111,22): warning :    int lineSize = end - start;
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(111,22): warning :                       ^
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(116,24): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(116,24): warning :     int keyLen = middle - start;
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(116,24): warning :                         ^
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(117,32): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(117,32): warning :     int valueLen = end - middle - 2;
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(117,32): warning :                                 ^
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(358,37): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(358,37): warning :    int len = read(fd, buf, sizeof buf);
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(358,37): warning :                                      ^
+  HttpResponse.cpp
+  main.cpp
+  PollDispatcher.cpp
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(44,20): warning : conversion to ‘short int’ from ‘int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(44,20): warning :     m_fds[i].events = events;
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(44,20): warning :                     ^
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(95,20): warning : conversion to ‘short int’ from ‘int’ may alter its value [-Wconversion]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(95,20): warning :     m_fds[i].events = events;
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(95,20): warning :                     ^
+  SelectDispatcher.cpp
+  TcpConnection.cpp
+  TcpServer.cpp
+  ThreadPool.cpp
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\ThreadPool.cpp(55,36): warning : operation on ‘((ThreadPool*)this)->ThreadPool::m_index’ may be undefined [-Wsequence-point]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\ThreadPool.cpp(55,36): warning :    m_index = ++m_index % m_threadNum;
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\ThreadPool.cpp(55,36): warning :                                     ^
+  WorkerThread.cpp
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\WorkerThread.cpp(39,1): warning : no return statement in function returning non-void [-Wreturn-type]
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\WorkerThread.cpp(39,1): warning :  }
+D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\WorkerThread.cpp(39,1): warning :  ^
+  正在链接对象
+  ReactorHttp-Cpp.vcxproj -> D:\VC\ReactorHttp-Cpp\ReactorHttp-Cpp\bin\x64\Debug\ReactorHttp-Cpp.out
